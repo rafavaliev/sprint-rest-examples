@@ -1,4 +1,4 @@
-package ru.dobrotrener.restapifakefactory.api.domain;
+package ru.dobrotrener.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,8 +11,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Name implements Serializable {
+public class Job implements Serializable {
     private String title;
-    private String first;
-    private String last;
+    private String company;
 }

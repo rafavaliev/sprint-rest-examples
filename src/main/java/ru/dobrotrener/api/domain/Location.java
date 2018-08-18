@@ -1,4 +1,4 @@
-package ru.dobrotrener.restapifakefactory.api.domain;
+package ru.dobrotrener.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,9 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Billing implements Serializable {
-    private Card card;
+public class Location implements Serializable {
+    private String street;
+    private String city;
+    private String state;
+    private String postcode;
 }

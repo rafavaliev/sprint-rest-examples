@@ -1,4 +1,4 @@
-package ru.dobrotrener.restapifakefactory.api.domain;
+package ru.dobrotrener.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,8 +11,8 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExpirationDate implements Serializable {
-    public String date;
-    public Integer timezoneType;
-    public String timezone;
+public class Name implements Serializable {
+    private String title;
+    private String first;
+    private String last;
 }

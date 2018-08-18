@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import ru.dobrotrener.restapifakefactory.api.domain.User;
-import ru.dobrotrener.restapifakefactory.api.domain.UserData;
+import ru.dobrotrener.api.domain.User;
+import ru.dobrotrener.api.domain.UserData;
 
 import java.util.List;
 

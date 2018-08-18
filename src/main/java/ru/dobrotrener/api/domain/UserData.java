@@ -1,4 +1,4 @@
-package ru.dobrotrener.restapifakefactory.api.domain;
+package ru.dobrotrener.api.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

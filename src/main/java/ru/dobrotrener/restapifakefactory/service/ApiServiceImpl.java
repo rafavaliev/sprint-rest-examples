@@ -2,7 +2,7 @@ package ru.dobrotrener.restapifakefactory.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import ru.dobrotrener.restapifakefactory.api.domain.UserData;
+import ru.dobrotrener.api.domain.UserData;
 
 @Service
 public class ApiServiceImpl implements ApiService {
@@ -15,7 +15,6 @@ public class ApiServiceImpl implements ApiService {
 
     @Override
     public UserData getUsers(Integer limit) {
-        UserData data = restTemplate.getForObject("http://apifaketory.com/api/user?limit=" + limit, UserData.class);
-        return data;
+        return restTemplate.getForObject("http://apifaketory.com/api/user?limit=" + limit, UserData.class);
     }
 }

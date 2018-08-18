@@ -1,4 +1,4 @@
-package ru.dobrotrener.restapifakefactory.api.domain;
+package ru.dobrotrener.api.domain;
 
 
 import lombok.AllArgsConstructor;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.Date;
 
 @Setter
 @Getter
