@@ -1,15 +1,17 @@
-package ru.dobrotrener.restapifakefactory.domain;
+package ru.dobrotrener.restapifakefactory.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Name {
+public class Name implements Serializable {
     private String title;
     private String first;
     private String last;

@@ -1,23 +1,25 @@
-package ru.dobrotrener.restapifakefactory.domain;
+package ru.dobrotrener.restapifakefactory.api.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User implements Serializable {
     private Name name;
-    private Gender gender;
+    private String gender;
     private Location location;
     private String email;
     private Login login;
     private String phone;
     private Job job;
     private Billing billing;
-    private Language language;
-    private Currency currency;
+    private String language;
+    private String currency;
 }
