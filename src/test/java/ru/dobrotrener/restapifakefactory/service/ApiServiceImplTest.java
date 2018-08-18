@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import ru.dobrotrener.api.domain.User;
 import ru.dobrotrener.api.domain.UserData;
 
@@ -27,10 +29,18 @@ public class ApiServiceImplTest {
     }
 
     @Test
-    public void getUsers() {
-        UserData userData = apiService.getUsers(1);
-        List<User> list = userData.getData();
+    public void getListOfUsers() {
+        List<User> list = apiService.getUsers(1);
         assertEquals(2, list.size());
-        log.info(userData.toString());
+        log.info(list.toString());
+    }
+
+    @Test
+    public void getFluxUsers() {
+        Flux<User> userFlux = apiService.getUsers(Mono.just(Integer.valueOf(1)));
+        List<User> list = userFlux.collectList().block();
+        assertNotNull(list);
+        assertEquals(2, list.size());
+        log.info(list.toString());
     }
 }
