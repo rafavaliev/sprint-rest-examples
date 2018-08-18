@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Prof.",
+        "first": "Damaris",
+        "last": "Koelpin"
+      },
+      "location": {
+        "street": "8198 Kylie Meadow",
+        "city": "Raeganhaven",
+        "state": "Massachusetts",
+        "postcode": "91588-0827"
+      },
+      "email": "chelsie.hauck@hotmail.com",
+      "login": {
+        "username": "tierra.dach",
+        "password": "gjT3xD2&<wm!'",
+        "md5": "ffa6862caa7f7aed4da0bd57029f13ec",
+        "sha1": "40a44490f6ca77a1245ba1b05428d95121f186fd",
+        "sha256": "a77b590b5b42fb0ff86f0c95ceff22f7c1109cac9d9aad015a3150511a5ffe20"
+      },
+      "phone": "866.369.2887",
+      "job": {
+        "title": "Elementary and Secondary School Administrators",
+        "company": "Leffler, Collins and Sawayn"
+      },
+      "billing": {
+        "card": {
+          "type": "Discover Card",
+          "number": "5590515345827465",
+          "expiration_date": {
+            "date": "2020-05-12 02:08:59.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+          },
+          "iban": "PG35228159767244128280156836",
+          "swift": "QYJRPYJR"
+        }
+      },
+      "language": "mi",
+      "currency": "XAU"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Dr.",
+        "first": "Trinity",
+        "last": "Wisoky"
+      },
+      "location": {
+        "street": "37924 Kyla Alley Suite 075",
+        "city": "Greenstad",
+        "state": "Florida",
+        "postcode": "84766-2302"
+      },
+      "email": "hope.sawayn@friesen.com",
+      "login": {
+        "username": "zack28",
+        "password": "lZD_\"jDLge;s5+E",
+        "md5": "4be9f2c08decfa0cb45e5314a10eaf8f",
+        "sha1": "4349b9769d227bf87a52ce0a40db6580ded2a90b",
+        "sha256": "9b2aae3e7529fd8fcb3fe37dcc49dfbbde0972ceb773cba743e8cf500fc829e4"
+      },
+      "phone": "(888) 453-5861",
+      "job": {
+        "title": "Locker Room Attendant",
+        "company": "Price, Grady and Marvin"
+      },
+      "billing": {
+        "card": {
+          "type": "MasterCard",
+          "number": "5428574358562350",
+          "expiration_date": {
+            "date": "2018-11-20 13:29:24.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+          },
+          "iban": "TO36983986644461803397691303",
+          "swift": "UFIZMSSS74F"
+        }
+      },
+      "language": "gn",
+      "currency": "CNY"
+    }
+  ]
+}
