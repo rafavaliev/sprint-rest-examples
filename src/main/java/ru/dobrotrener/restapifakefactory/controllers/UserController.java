@@ -3,7 +3,6 @@ package ru.dobrotrener.restapifakefactory.controllers;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.server.ServerWebExchange;
@@ -28,10 +27,9 @@ public class UserController {
     public String formPost(Model model, ServerWebExchange serverWebExchange) {
         model.addAttribute("users",
                 apiService
-                        .getUsers(
-                                Integer.valueOf(10)
-                        )
-        );
+                        .getUsers(serverWebExchange
+                                .getFormData()
+                                .map(data -> 10)));
 
         return "userlist";
     }

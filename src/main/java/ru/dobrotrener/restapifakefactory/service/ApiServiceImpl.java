@@ -1,5 +1,6 @@
 package ru.dobrotrener.restapifakefactory.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import ru.dobrotrener.api.domain.UserData;
 import java.util.List;
 
 @Service
+@Slf4j
 public class ApiServiceImpl implements ApiService {
 
     private RestTemplate restTemplate;
@@ -34,11 +36,11 @@ public class ApiServiceImpl implements ApiService {
     }
 
     @Override
-    public Flux<User> getUsers(Mono<Integer> limit) {
+    public Flux<User> getUsers(Mono<Integer> limitMono) {
         return WebClient
                 .create(api_url)
                 .get()
-                .uri(uriBuilder -> uriBuilder.queryParam("limit", limit.block()).build())
+                .uri(uriBuilder -> uriBuilder.queryParam("limit", limitMono.block()).build())
                 .accept(MediaType.APPLICATION_JSON)
                 .exchange()
                 .flatMap(response -> response.bodyToMono(UserData.class))
